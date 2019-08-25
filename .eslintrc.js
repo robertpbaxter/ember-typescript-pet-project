@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2019,
     sourceType: 'module'
   },
   plugins: [
@@ -33,6 +33,7 @@ module.exports = {
       excludedFiles: [
         'app/**',
       ],
+      parser:'babel-eslint',
       parserOptions: {
         sourceType: 'script',
         ecmaVersion: 2015
